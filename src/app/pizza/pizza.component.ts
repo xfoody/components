@@ -18,6 +18,15 @@ export class PizzaComponent implements OnInit {
   // declare availablePizzaToppings which is an array
   // of PizzaToppingDisplay objects
   public availablePizzaToppings: PizzaToppingDisplay [];
+  public total = 0; // type inferred since init to 0
+  public calculateTotal = () => {
+    this.total = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
+        , 0
+      );
+  }
 
   // "Magic" DI
   constructor(public pizzaSvc: PizzaService) { }
