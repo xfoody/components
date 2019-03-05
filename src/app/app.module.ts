@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule
