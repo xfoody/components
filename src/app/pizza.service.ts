@@ -16,6 +16,7 @@ export class PizzaService {
 
     return pizzaToppingsFromWebService.map(x => ({
       ...x
+      // pizza checkboxes are defaulted to off
       , checked: false
     }));
 
