@@ -1,4 +1,6 @@
 
 <div>
-  <p *ngFor='let t of availablePizzaToppings'>({{t.price|currency}}) {{t.name}}</p>
+  <p *ngFor='let t of availablePizzaToppings'>
+  <input type="checkbox"[(ngModel)]='t.checked'> {{t.price|currency}} {{t.name}}
+</p>
 </div>
