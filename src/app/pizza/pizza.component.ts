@@ -1,12 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service'
 
+interface PizzaToppingDisplay {
+  name: string;
+  price: number;
+  checked: boolean;
+}
+
 @Component({
   selector: 'app-pizza',
   templateUrl: './pizza.component.html',
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
+
+  public availablePizzaToppings: PizzaToppingDisplay[];
 
   // Magic DI ! ! ! (dependency injection)
   constructor(public pizzaSvc: PizzaService) { }
@@ -20,9 +28,7 @@ export class PizzaComponent implements OnInit {
     // : - (
     // Use DI (dependency injection) instead...
 
-    const foo = this.pizzaSvc.loadPizzaToppings();
-    console.log(foo);
-
+    this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
   }
 
 }
