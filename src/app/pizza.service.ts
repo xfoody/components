@@ -11,7 +11,7 @@ export class PizzaService {
     // This is a pretend const that would 
     // ultimately come from a web service call
     const pizzaToppingsFromWebService = [
-     {name: 'Peperoni', price: 1.50} 
+     {name: 'Pepperoni', price: 1.50} 
      , {name: 'Olives', price: 3.50} 
     ];
 
