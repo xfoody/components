@@ -18,6 +18,15 @@ interface PizzaToppingDisplay {
 export class PizzaComponent implements OnInit {
 
   public availablePizzaToppings: PizzaToppingDisplay[];
+  total = 0;
+  public calculateTotal = () => {
+    this.total = this.availablePizzaToppings
+    .filter(x => x.checked)
+    .reduce(
+       (acc, x) => acc + x.price
+       , 0
+    );
+  }
 
   //magic DI !!!
   constructor(public pizzaSvc: PizzaService) { }
