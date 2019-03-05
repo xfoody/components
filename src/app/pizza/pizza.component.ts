@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
+// help define shape of data (does not generate any JS)
+interface PizzaToppingDisplay {
+  name: string;
+  price: number;
+  checked: boolean;
+}
+
 @Component({
   selector: 'app-pizza',
   templateUrl: './pizza.component.html',
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
+
+  // declare availablePizzaToppings which is an array
+  // of PizzaToppingDisplay objects
+  public availablePizzaToppings: PizzaToppingDisplay [];
 
   // "Magic" DI
   constructor(public pizzaSvc: PizzaService) { }
@@ -18,8 +29,7 @@ export class PizzaComponent implements OnInit {
     // let svc = new PizzaService() -- NO; use DI 
     // (dependency injection) instead
     
-    const foo = this.pizzaSvc.loadPizzaToppings();
-    console.log(foo);
+    this.availablePizzaToppings = this.pizzaSvc.loadPizzaToppings();
   }
 
 }
