@@ -11,8 +11,8 @@ import { PizzaComponent } from './pizza/pizza.component';
     PizzaComponent
   ],
   imports: [
-    BrowserModule
-    , FormsModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
