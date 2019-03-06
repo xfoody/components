@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
@@ -21,6 +21,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatButtonModule
     , MatCheckboxModule
     , MatCardModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
