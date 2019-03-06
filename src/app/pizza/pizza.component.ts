@@ -7,6 +7,7 @@ import {PizzaService} from '../pizza.service';
   styleUrls: ['./pizza.component.css']
 })
 export class PizzaComponent implements OnInit {
+    public availablePizzaToppings;
 //magic DI
   constructor(public pizzaSvc: PizzaService) { }
 
@@ -15,8 +16,7 @@ export class PizzaComponent implements OnInit {
       //let svc = new pizzaService()
       //:-(
       // use DI Instead
-      const foo = this.pizzaSvc.loadPizzaTopings();
-      console.log(foo);
+    this.availablePizzaToppings = this.pizzaSvc.loadPizzaTopings();
   }
 
 }
