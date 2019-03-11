@@ -7,7 +7,7 @@ interface PizzaToppingDisplay {
 }
 
 @Component({
-  selector: 'app-pizza',
+  selector: 'pizza-toppings',
   templateUrl: './pizza.component.html',
   styleUrls: ['./pizza.component.css']
 })
