@@ -4,5 +4,7 @@
   > <input (change) ="recalculateTotal()" type="checkbox" name="" [(ngModel)]="t.checked">
   {{t.name}} ({{t.price | currency}})</p>
   <p><button *ngIf='false' (click) ="CalculateTotal()">Calculate Total</button></p>
-  <h3>Total: {{total |currency}}</h3>
+  <h3>Total: {{total |currency}}
+    <span *ngIf ="showWarnings" style="color: red; font-size: 0.66em;">(Don't forget to choose some toppings)</span>
+  </h3>
 </diV>

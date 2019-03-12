@@ -53,4 +53,13 @@ this.total = this.availablePizzaToppings
     
   }
 
+  //TypeScript getter property
+
+
+  get showWarnings() {
+    // return this.availablePizzaToppings.filter(x=> x.checked).length == 0;
+    //.filter().length comparasons ara so popular, JS/TS has .some();
+    return !this.availablePizzaToppings.some(x=> x.checked);
+  }
+
 }
