@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule} from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule
-    , FormsModule, BrowserAnimationsModule
+    , FormsModule, BrowserAnimationsModule, MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
