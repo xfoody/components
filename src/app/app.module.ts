@@ -11,6 +11,7 @@ import { MatCardModule
         , MatFormFieldModule
         , MatInputModule } from '@angular/material';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
+    , FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
