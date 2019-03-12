@@ -9,5 +9,6 @@
   </p>
   <h3>
     Total: {{ total | currency }}
+    <span *ngIf='showWarning' style="color:red; font-size:.66em;">(Don't reget to choose some toppings)</span>
   </h3>
 </div>

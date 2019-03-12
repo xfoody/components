@@ -36,6 +36,12 @@ export class PizzaComponent implements OnInit {
     this.recalculateTotal();
   };
 
+  //Typescript getter property
+  get showWarning() {
+    //return this.availablePizzaToppings.filter(x => x.checked).length == 0; 
+    
+    return !this.availablePizzaToppings.some(x => x.checked); 
+  }
 
 
   // Magic DI ! ! !
