@@ -16,7 +16,7 @@ export class PizzaComponent implements OnInit {
 
   public availablePizzaToppings: PizzaToppingDisplay[];
   total = 0;
-  public calculateTotal = () => {
+  public recalculateTotal = () => {
     this.total = this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
@@ -24,6 +24,33 @@ export class PizzaComponent implements OnInit {
         , 0
       );
   };
+
+
+public checkAll = () => {
+  this.availablePizzaToppings =  this.availablePizzaToppings.map(x => ({...x, checked: true}));
+  this.recalculateTotal();
+}
+
+
+public uncheckAll = () => {
+  this.availablePizzaToppings =  this.availablePizzaToppings.map(x => ({...x, checked: false}));
+  this.recalculateTotal();
+}
+
+
+//typescript getter property
+get showWarning() {
+  //return this.availablePizzaToppings.filter(x => x.checked).length == 0;//fileter always return an array so if array lengh is 0, that means nothing in that array
+
+
+  return !this.availablePizzaToppings.some(x => x.checked);
+
+
+}
+
+
+
+
 
 
   // Magic DI ! ! !
