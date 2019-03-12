@@ -38,6 +38,20 @@ public uncheckAll = () => {
 }
 
 
+//typescript getter property
+get showWarning() {
+  //return this.availablePizzaToppings.filter(x => x.checked).length == 0;//fileter always return an array so if array lengh is 0, that means nothing in that array
+
+
+  return !this.availablePizzaToppings.some(x => x.checked);
+
+
+}
+
+
+
+
+
 
   // Magic DI ! ! !
   constructor(public pizzaSvc: PizzaService) { }
