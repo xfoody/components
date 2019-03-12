@@ -39,4 +39,18 @@ this.total = this.availablePizzaToppings
       console.log(this.availablePizzaToppings);
   }
 
+  public checkAll = () =>{
+    this.availablePizzaToppings = this.availablePizzaToppings
+        .map(x => ({...x,checked:true}));
+        this.recalculateTotal();
+
+  }
+  public uncheckAll = () =>{
+    this.availablePizzaToppings = this.availablePizzaToppings
+        .map(x => ({...x,checked:false}));
+        this.recalculateTotal();
+
+    
+  }
+
 }

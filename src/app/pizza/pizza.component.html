@@ -1,4 +1,5 @@
 <diV>
+  <a href="#" (click) = "checkAll()">All</a> | <a href="#"(click) = "uncheckAll()">None</a>
   <p *ngFor = "let t of availablePizzaToppings"
   > <input (change) ="recalculateTotal()" type="checkbox" name="" [(ngModel)]="t.checked">
   {{t.name}} ({{t.price | currency}})</p>
