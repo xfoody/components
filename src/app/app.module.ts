@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material';
+import { MatButtonModule} from '@angular/material';
+import { MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { MatCardModule} from '@angular/material';
     , FormsModule
     , BrowserAnimationsModule
     , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
