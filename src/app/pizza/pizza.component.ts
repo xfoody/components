@@ -16,7 +16,7 @@ export class PizzaComponent implements OnInit {
 
   public availablePizzaToppings: PizzaToppingDisplay[];
   total = 0;
-  public calculateTotal = () => {
+  public recalculateTotal = () => {
     this.total = this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
