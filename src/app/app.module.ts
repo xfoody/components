@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { PizzaComponent } from './pizza/pizza.component';
   ],
   imports: [
     BrowserModule
-    ,FormsModule
+    ,FormsModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
