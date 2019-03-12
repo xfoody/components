@@ -1,4 +1,5 @@
-<div>
+<mat-card>
+  <p><strong>Pizza Toppings</strong></p>
   <a href='#' (click)='checkAll()'>All</a> | <a href='#' (click)='uncheckAll()'>None</a>
   <p *ngFor='let t of availablePizzaToppings'>
     <input (change)='recalculateTotal()' type="checkbox" [(ngModel)]='t.checked'>
@@ -11,4 +12,4 @@
     Total: {{ total | currency }} 
     <span *ngIf='showWarning' style='color: red; font-size: 0.66em;'>(Don't forget to choose some toppings!</span>
   </h3>
-</div>
+</mat-card>
