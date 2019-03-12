@@ -8,7 +8,7 @@ interface PizzaToppingDisplay {
 }
 
 @Component({
-  selector: 'app-pizza',
+  selector: 'pizza-toppings',
   templateUrl: './pizza.component.html',
   styleUrls: ['./pizza.component.css']
 })
@@ -16,7 +16,7 @@ export class PizzaComponent implements OnInit {
 
   public availablePizzaToppings: PizzaToppingDisplay[];
   total = 0;
-  public calculateTotal = () => {
+  public recalculateTotal = () => {
     this.total = this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
@@ -24,6 +24,24 @@ export class PizzaComponent implements OnInit {
         , 0
       );
   };
+
+  public checkAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }))
+    this.recalculateTotal();
+  }
+
+  public uncheckAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }))
+    this.recalculateTotal();
+  }
+
+  // TypeScript getter property...
+  get showWarning() {
+    //return this.availablePizzaToppings.filter(x => x.checked).length == 0;
+
+    // .filter().length comparissons are so popular, JS/TS has a .some();
+    return !this.availablePizzaToppings.some(x => x.checked);
+  }
 
 
   // Magic DI ! ! !
