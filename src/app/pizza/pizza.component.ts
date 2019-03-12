@@ -34,6 +34,13 @@ export class PizzaComponent implements OnInit {
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
     this.recalculateTotal();
   }
+  //typescript getter property
+  get showWarning() {
+    return this.availablePizzaToppings.filter(x => x.checked).length == 0;
+
+    //filter.length comparison
+    //return this.availablePizzaToppings.some(x => x.checked);
+  }
 
   // Magic DI ! ! !
   constructor(public pizzaSvc: PizzaService) { }
