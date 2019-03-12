@@ -1,9 +1,14 @@
 <mat-card>
-  <h3>Pizza Toppings</h3>
-  <a href='#' (click)='checkAll()'>All</a> | <a href='#' (click)='uncheckAll()'>None</a>
+  <mat-card-title>
+    Pizza Toppings
+  </mat-card-title>
+  <mat-card-content>
+  <button mat-button (click)='checkAll()'>All</button> | <button mat-button (click)='uncheckAll()'>None</button>
   <p *ngFor='let t of availablePizzaToppings'>
-    <input (change)='recalculateTotal()' type="checkbox" [(ngModel)]='t.checked'>
+   
+    <mat-checkbox (change)='recalculateTotal()' type="checkbox" [(ngModel)]='t.checked'>
     {{ t.name }} ({{ t.price | currency }})
+    </mat-checkbox>
   </p>
   <p>
     <button *ngIf='false' (click)='calculateTotal()'>Calculate Total</button>
@@ -12,4 +17,5 @@
     Total: {{ total | currency }} 
     <span *ngIf='showWarning' style='color: red; font-size: 0.66em;'>(Don't forget to choose some toppings!)</span>
   </h3>
+</mat-card-content>
 </mat-card>
