@@ -35,6 +35,12 @@ export class PizzaComponent implements OnInit {
     this.recalculateTotal();
   }
 
+  // Typescript Getter Property
+  get showWarning() {
+    // return this.availablePizzaToppings.filter(x => x.checked).length == 0;
+    // .filter().length compairisons are so common there is a function to perform this action .some()
+    return !this.availablePizzaToppings.some(x => x.checked);
+  }
 
   // Magic DI ! ! !
   constructor(public pizzaSvc: PizzaService) { }
