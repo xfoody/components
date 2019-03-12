@@ -8,7 +8,7 @@ interface PizzaToppingDisplay {
 }
 
 @Component({
-  selector: 'app-pizza',
+  selector: 'pizza-toppings',
   templateUrl: './pizza.component.html',
   styleUrls: ['./pizza.component.css']
 })
@@ -24,6 +24,20 @@ export class PizzaComponent implements OnInit {
         , 0
       );
   };
+
+  public checkAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }));
+    this.recalculateTotal();
+  };
+
+  public uncheckAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
+    this.recalculateTotal();
+  }
+
+  get showWarning() {
+    return !this.availablePizzaToppings.some(x => x.checked);
+  }
 
 
   // Magic DI ! ! !

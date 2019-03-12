@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <head>
+        <!-- <title>My Page</title>
+        <link rel="stylesheet" type="text/css" href="css/pizza.component.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
 <body>
 
 <h1 class="mx-auto" style="width: 300px;"> Pizza Time YO!</h1>
+
+<a style = 'text-align: center' href='#' (click)='checkAll()'> All</a>  | <a  href='#' (click)='uncheckAll()'> None</a> 
 
 <div class="mx-auto" style="width: 200px;">
   <p *ngFor='let t of availablePizzaToppings'>
@@ -17,7 +21,8 @@
     <button *ngIf='false' (click)='calculateTotal()'>Calculate Total</button>
   </p>
   <h3>
-   Total: {{ total | currency }}
+   Total: {{ total | currency }} 
+   <span *ngIf='showWarning' style ='color: red; font-size: o.44em;'> (Dont forget to choose some toppings)</span>
   </h3>
 </div>
 
