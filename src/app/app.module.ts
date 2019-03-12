@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
+import { FullnameComponent } from './fullname/fullname.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    FullnameComponent
   ],
   imports: [
     BrowserModule
