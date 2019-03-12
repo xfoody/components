@@ -23,7 +23,7 @@ export class PizzaComponent implements OnInit {
         (acc, x) => acc + x.price
         , 0
       );
-  };
+  }
 
   public checkAll = () => {
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
@@ -31,7 +31,7 @@ export class PizzaComponent implements OnInit {
       checked: true
     }));
     this.recalculateTotal();
-  };
+  }
 
   public uncheckAll = () => {
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({
@@ -39,7 +39,15 @@ export class PizzaComponent implements OnInit {
       checked: false
     }));
     this.recalculateTotal();
-  };
+  }
+
+  // Typescript getter property...
+  get showWarning() {
+    // return this.availablePizzaToppings.filter(x => x.checked).length === 0;
+    // .filter().length comparisons are so popular, JS/TS has a .some() method
+    // return true at the first instance of an object literal with checked prop == false
+    return !this.availablePizzaToppings.some(x => x.checked);
+  }
 
   // Magic DI ! ! !
   constructor(public pizzaSvc: PizzaService) { }

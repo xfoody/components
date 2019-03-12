@@ -8,6 +8,7 @@
     <button *ngIf='false' (click)='calculateTotal()'>Calculate Total</button>
   </p>
   <h3>
-    {{ total | currency }}
+    {{ total | currency }} 
+    <span *ngIf='showWarning' style='color: red; font-size: 0.66em'>(don't forget to choose some toppings!)</span>
   </h3>
 </div>
