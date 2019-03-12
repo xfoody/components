@@ -35,6 +35,14 @@ public uncheckAll = () => {
   this.recalculateTotal();
 }
 
+// Typescript getter property
+get showWarning() {
+  // return this.availablePizzaToppings.filter(x => x.checked).length == 0;
+
+  // .filter().length comparisons are so popular, JS/TS has a some() function to combat it
+  return !this.availablePizzaToppings.some(x => x.checked);
+}
+
   // Magic DI ! ! !
   constructor(public pizzaSvc: PizzaService) { }
 
