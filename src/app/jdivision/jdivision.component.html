@@ -1,3 +1,13 @@
-<p>
-  jdivision works!
-</p>
+<mat-card class="card">
+    <mat-card-title>Jeanne's Division</mat-card-title>
+  <mat-card-content>
+    <form>
+      <input [(ngModel)] = "dividend" type="number" name="dividend">      
+      <span> / </span>
+      <input [(ngModel)] = "divider" type="number" name="divider">
+      <button (click) = "divideNumbers()"> = </button>
+      <span>{{quotient}} </span>
+      
+    </form>
+  </mat-card-content>
+</mat-card>
