@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule
-      ,MatFormFieldModule} from '@angular/material';
+      ,MatFormFieldModule,
+      MatInputModule} from '@angular/material';
 import { JdivisionComponent } from './jdivision/jdivision.component';
 
 @NgModule({
@@ -27,6 +28,8 @@ import { JdivisionComponent } from './jdivision/jdivision.component';
     , MatButtonModule
     , MatCheckboxModule
     ,MatFormFieldModule
+    ,MatInputModule 
+    ,MatButtonModule
   
   ],
   providers: [],

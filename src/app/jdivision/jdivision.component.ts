@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JdivisionComponent implements OnInit {
 
-  dividend = 14;
+  dividend = 22;
   divider = 4;
-  quotient = 0;
+  quotient = 5.5;
   show: boolean = true;
   errorMessage = "";
 
