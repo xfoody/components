@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
+import { JdivisionComponent } from './jdivision/jdivision.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    JdivisionComponent
   ],
   imports: [
     BrowserModule
