@@ -3,10 +3,11 @@
   <mat-card-content>
     <form>
       <input [(ngModel)] = "dividend" type="number" name="dividend">      
-      <span> / </span>
-      <input [(ngModel)] = "divider" type="number" name="divider">
-      <button (click) = "divideNumbers()"> = </button>
-      <span>{{quotient}} </span>
+      <span> &nbsp; /  &nbsp;</span>
+      <input [(ngModel)] = "divider" type="number" name="divider"> &nbsp;
+      <button (click) = "divideNumbers()"> = </button> &nbsp;
+      <span *ngIf="show">{{quotient }}</span> {{ errorMessage}} 
+
       
     </form>
   </mat-card-content>
