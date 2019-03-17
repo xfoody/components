@@ -9,11 +9,13 @@ import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    RwmRpslsComponent
   ],
   imports: [
     BrowserModule
