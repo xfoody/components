@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rwm-rpsls',
+  selector: 'rwm-rpsls',
   templateUrl: './rwm-rpsls.component.html',
   styleUrls: ['./rwm-rpsls.component.css']
 })
