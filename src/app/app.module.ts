@@ -9,11 +9,13 @@ import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    DhSquarerootComponent
   ],
   imports: [
     BrowserModule
