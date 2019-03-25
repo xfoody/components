@@ -4,16 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
+import { TrumpipsumComponent } from './trumpipsum/trumpipsum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    TrumpipsumComponent
   ],
   imports: [
     BrowserModule
@@ -23,6 +26,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     , MatButtonModule
     , MatCheckboxModule
     , FlexLayoutModule
+    , MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

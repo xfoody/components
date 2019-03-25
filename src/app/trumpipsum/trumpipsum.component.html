@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-title>
+    Trump Ipsum Generator
+  </mat-card-title>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Number of paragraphs</mat-label>
+      <mat-select [(ngModel)]='selected' (ngModelChange)='generateIpsum()'>
+        <mat-option *ngFor="let option of options" [value]="option.value">
+          {{option.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-content>
+    <p *ngFor="let ipsum of trumpIpsums">
+      {{ipsum}}
+    </p>
+  </mat-card-content>
+</mat-card>
