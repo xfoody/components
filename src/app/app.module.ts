@@ -7,7 +7,10 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
-        , MatCheckboxModule } from '@angular/material';
+        , MatCheckboxModule
+        , MatFormFieldModule
+        , MatInputModule
+        , MatSelectModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 
@@ -24,6 +27,9 @@ import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatFormFieldModule
+    , MatInputModule
+    , MatSelectModule
     , FlexLayoutModule
   ],
   providers: [],
