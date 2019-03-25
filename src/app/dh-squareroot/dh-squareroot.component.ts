@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DhSquarerootComponent implements OnInit {
 
+  numberToSquare = 25;
+  answer = 5;
+
+  squareNumber = () => {
+    this.answer = Math.sqrt(this.numberToSquare);
+  }
+
   constructor() { }
 
   ngOnInit() {

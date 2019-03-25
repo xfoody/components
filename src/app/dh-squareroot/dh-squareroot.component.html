@@ -1,7 +1,12 @@
-<div>
-  <h3>Dylan's Square Root Component</h3>
-  √ of
-  <input type="number" [(ngModel)]='numberToSquare'>
-  <button (click)='squareNumber()'>=</button>
-  {{ answer }}
-</div>
+<mat-card>
+      <mat-card-title>
+          Dylan's Square Root Component
+      </mat-card-title>
+      <mat-card-content>
+          √ &nbsp; of &nbsp; 
+          <input type="number" [(ngModel)]='numberToSquare'>
+          <button (click)='squareNumber()'>=</button>
+          &nbsp;
+          {{ answer }}
+        </mat-card-content>
+</mat-card>
