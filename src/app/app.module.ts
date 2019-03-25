@@ -9,12 +9,14 @@ import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
 import { FullnameComponent } from './fullname/fullname.component';
+import { DlnMultiplyComponent } from './dln-multiply/dln-multiply.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaComponent,
-    FullnameComponent
+    FullnameComponent,
+    DlnMultiplyComponent
   ],
   imports: [
     BrowserModule
