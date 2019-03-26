@@ -1,9 +1,13 @@
-<div>
-  <h3>Sam's Modulo Component</h3>
-  <input type="number" [(ngModel)]='numberOne'>
-  &nbsp; % &nbsp;
-  <input type="number" [(ngModel)]='numberTwo'>
-  &nbsp;
-  <button (click)='moduloNumbers()'>=</button>
-  {{ answer }}
-</div>
+<mat-card>
+  <mat-card-title>Sam's Modulo Component</mat-card-title>
+  <mat-card-content>
+    <div>
+      <input type="number" [(ngModel)]='numberOne'>
+      &nbsp; % &nbsp;
+      <input type="number" [(ngModel)]='numberTwo'>
+      &nbsp;
+      <button (click)='moduloNumbers()'>=</button>
+      {{ answer }}
+    </div>
+  </mat-card-content>
+<mat-card>
