@@ -24,6 +24,7 @@ import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.
 import { DcSquareComponent } from './dc-square/dc-square.component';
 import { DlnMultiplyComponent } from './dln-multiply/dln-multiply.component';
 import { Slackntell6Component } from './slackntell6/slackntell6.component';
+import { AppSsoperComponent } from './app-ssoper/app-ssoper.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { Slackntell6Component } from './slackntell6/slackntell6.component';
     , DlnMultiplyComponent
     , TrumpipsumComponent
     , BoMultiplicationComponent
+    , AppSsoperComponent
     , DcSquareComponent
     , Slackntell6Component
   ],
