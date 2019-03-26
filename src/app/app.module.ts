@@ -9,28 +9,30 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule
-      ,MatFormFieldModule,
-      MatInputModule} from '@angular/material';
+        , MatFormFieldModule
+        , MatInputModule} from '@angular/material';
 import { JdivisionComponent } from './jdivision/jdivision.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaComponent,
-    JdivisionComponent
+      AppComponent
+    , PizzaComponent
+    , JdivisionComponent
+    , TjsAdditionComponent
   ],
   imports: [
     BrowserModule
     , FormsModule
-    ,ReactiveFormsModule
+    , ReactiveFormsModule
     , BrowserAnimationsModule
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    ,MatFormFieldModule
-    ,MatInputModule 
-    ,MatButtonModule
-  
+    , MatInputModule 
+    , MatFormFieldModule
+    , FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
