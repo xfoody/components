@@ -53,6 +53,7 @@ import { AppSsoperComponent } from './app-ssoper/app-ssoper.component';
     , MatInputModule
     , MatOptionModule
     , MatSelectModule
+    , FlexLayoutModule
   ],
 
   providers: [],
