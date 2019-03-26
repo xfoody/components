@@ -1,7 +1,9 @@
 <div>
-  <input type="number">
-  %
-  <input type="number">
-  <button>=</button>
-  answer
+  <h3>Sam's Modulo Component</h3>
+  <input type="number" [(ngModel)]='numberOne'>
+  &nbsp; % &nbsp;
+  <input type="number" [(ngModel)]='numberTwo'>
+  &nbsp;
+  <button (click)='moduloNumbers()'>=</button>
+  {{ answer }}
 </div>

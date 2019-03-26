@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppSsoperComponent implements OnInit {
 
+  numberOne = 10;
+  numberTwo = 5;
+  answer=0;
+
+  moduloNumbers = () => {
+    this.answer = this.numberOne % this.numberTwo
+  }
+
   constructor() { }
 
   ngOnInit() {
