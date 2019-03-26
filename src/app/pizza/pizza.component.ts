@@ -42,22 +42,25 @@ export class PizzaComponent implements OnInit {
 
 
   public checkAll = () => {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }));
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: true}))
     this.recalculateTotal();
   }
 
   public uncheckAll = () => {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({...x, checked: false}))
     this.recalculateTotal();
   }
 
-  // TypeScript getter property...
-  get showWarning() {
-    //return this.availablePizzaToppings.filter(x => x.checked).length == 0;
 
-    // .filter().length comparissons are so popular, JS/TS has a .some()
-    return !this.availablePizzaToppings.some(x => x.checked);
-  }
+//Typescript getter property.....
+get showWarning() {
+ // return this.availablePizzaToppings.filter(x=> x.checked).length == 0;
+
+  return !this.availablePizzaToppings.some(x=> x.checked);
+
+}
+
+
 
   // displayedColumns: string[] = ['numberOne', 'numberTwo', 'multiplication'];
   // dataSource = new MatTableDataSource(ELEMENT_DATA);

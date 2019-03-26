@@ -8,15 +8,15 @@
     <p *ngFor='let t of availablePizzaToppings'>
       <mat-checkbox (change)='recalculateTotal()' [(ngModel)]='t.checked'>
         {{ t.name }} ({{ t.price | currency }})
-      </mat-checkbox> 
+      </mat-checkbox>
     </p>
     <p>
       <button *ngIf='false' (click)='calculateTotal()'>Calculate Total</button>
     </p>
     <h3>
-      Total: {{ total | currency }} 
+      Total: {{ total | currency }}
       <span *ngIf='showWarning' style='color: red; font-size: 0.66em;'>(Don't forget to choose some toppings!)</span>
-    </h3> 
+    </h3>
 </mat-card-content>
-   
+
 </mat-card>
