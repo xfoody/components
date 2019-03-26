@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZpcSubtractComponent implements OnInit {
 
+  numberOne = 0;
+  numberTwo = 0;
+  answer = 0;
+  subtractNumbers = () => {
+    this.answer = this.numberOne - this.numberTwo;
+  }
+
   constructor() { }
 
   ngOnInit() {
