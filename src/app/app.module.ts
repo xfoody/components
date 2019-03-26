@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { TrumpipsumComponent } from './trumpipsum/trumpipsum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule        
+import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule
         , MatFormFieldModule
@@ -21,6 +21,7 @@ import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.component';
 import { DcSquareComponent } from './dc-square/dc-square.component';
+import { Slackntell6Component } from './slackntell6/slackntell6.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DcSquareComponent } from './dc-square/dc-square.component';
     , TrumpipsumComponent
     , BoMultiplicationComponent
     , DcSquareComponent
+    , Slackntell6Component
   ],
   imports: [
     BrowserModule
@@ -48,7 +50,7 @@ import { DcSquareComponent } from './dc-square/dc-square.component';
     , MatOptionModule
     , MatSelectModule
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })
