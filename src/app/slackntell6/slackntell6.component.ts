@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Slackntell6Component implements OnInit {
 
+
+  subtraction = () => {
+    this.answer = this.numberOne - this.numberTwo;
+  }
+
   constructor() { }
 
   ngOnInit() {
