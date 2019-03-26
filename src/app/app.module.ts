@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
+import { Slackntell6Component } from './slackntell6/slackntell6.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    Slackntell6Component
   ],
   imports: [
     BrowserModule
