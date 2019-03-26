@@ -1,6 +1,12 @@
-<div>
-  <h3>Dylan's Squared Number Component</h3>
-  <input type="number"> squared
-  <button>=</button>
-  answer
-</div>
+<mat-card>
+    <div>
+        <mat-card-title>Dylan's Squared Number Component</mat-card-title>
+        <mat-form-field>
+            <input matInput type="number" [(ngModel)]='number' autofocus> &nbsp;
+        </mat-form-field>
+        <button mat-raised-button (click)='squareNumber()'>squared</button>
+        &nbsp; =
+        {{ answer }}
+    </div>
+
+</mat-card>

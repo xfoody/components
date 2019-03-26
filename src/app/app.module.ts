@@ -7,6 +7,7 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
+        , MatInputModule
         , MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DcSquareComponent } from './dc-square/dc-square.component';
@@ -24,6 +25,7 @@ import { DcSquareComponent } from './dc-square/dc-square.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
     , FlexLayoutModule
   ],
   providers: [],

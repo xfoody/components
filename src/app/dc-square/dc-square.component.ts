@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DcSquareComponent implements OnInit {
 
+    number = 5;
+    answer = 25;
+
+  squareNumber = () => {
+    this.answer = this.number * this.number;
+  }
+
   constructor() { }
 
   ngOnInit() {
