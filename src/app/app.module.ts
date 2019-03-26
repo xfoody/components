@@ -20,6 +20,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.component';
+import { AppSsoperComponent } from './app-ssoper/app-ssoper.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.
     , RwmRpslsComponent
     , TrumpipsumComponent
     , BoMultiplicationComponent
+    , AppSsoperComponent
   ],
   imports: [
     BrowserModule
