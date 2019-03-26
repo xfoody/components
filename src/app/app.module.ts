@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MatCardModule
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
