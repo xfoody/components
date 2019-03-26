@@ -14,11 +14,13 @@ import { MatCardModule
 import { JdivisionComponent } from './jdivision/jdivision.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 
 @NgModule({
   declarations: [
-      AppComponent
+    AppComponent
     , PizzaComponent
+    , DhSquarerootComponent
     , JdivisionComponent
     , TjsAdditionComponent
   ],
