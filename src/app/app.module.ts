@@ -17,7 +17,7 @@ import { MatCardModule
         } from '@angular/material';
 import { JdivisionComponent } from './jdivision/jdivision.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 import { FullnameComponent } from './fullname/fullname.component';
@@ -31,7 +31,8 @@ import { DlnMultiplyComponent } from './dln-multiply/dln-multiply.component';
     , JdivisionComponent
     , TjsAdditionComponent
     , RwmRpslsComponent
-    ,DlnMultiplyComponent
+    , DlnMultiplyComponent
+    
   ],
   imports: [
     BrowserModule
@@ -43,7 +44,6 @@ import { DlnMultiplyComponent } from './dln-multiply/dln-multiply.component';
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
-    , FlexLayoutModule
     , MatOptionModule
     , MatSelectModule
   ],
