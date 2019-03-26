@@ -7,12 +7,12 @@ export interface Option {
 }
 
 @Component({
-  selector: 'trumpipsum',
+  selector: 'trump-ipsum',
   templateUrl: './trumpipsum.component.html',
   styleUrls: ['./trumpipsum.component.css']
 })
 
-export class TrumpipsumComponent implements OnInit {
+export class TrumpIpsumComponent implements OnInit {
   public selected;
   public trumpQuotes = [];
   public trumpIpsums = [];
@@ -27,7 +27,6 @@ export class TrumpipsumComponent implements OnInit {
 
   public generateIpsum = () => {
     this.trumpIpsums = this.trumpQuotes.slice().sort(() => Math.random() - 0.5).slice(0, this.selected);
-    console.log(this.trumpIpsums);
   }
 
   // dependency injection
@@ -36,5 +35,4 @@ export class TrumpipsumComponent implements OnInit {
   ngOnInit() {
     this.trumpQuotes = this.trumpipsumSvc.loadTrumpIpsums();
   }
-
 }

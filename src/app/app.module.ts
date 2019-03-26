@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule
-  ,ReactiveFormsModule } from '@angular/forms';
+        , ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
-import { TrumpipsumComponent } from './trumpipsum/trumpipsum.component';
+import { TrumpIpsumComponent } from './trumpipsum/trumpipsum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule
         , MatButtonModule
@@ -34,7 +34,7 @@ import { AppSsoperComponent } from './app-ssoper/app-ssoper.component';
     , TjsAdditionComponent
     , RwmRpslsComponent
     , DlnMultiplyComponent
-    , TrumpipsumComponent
+    , TrumpIpsumComponent
     , BoMultiplicationComponent
     , AppSsoperComponent
     , DcSquareComponent
@@ -54,7 +54,6 @@ import { AppSsoperComponent } from './app-ssoper/app-ssoper.component';
     , MatSelectModule
     , FlexLayoutModule
   ],
-
   providers: [],
   bootstrap: [AppComponent]
 })
