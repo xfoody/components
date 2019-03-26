@@ -5,6 +5,7 @@ import { FormsModule
 
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
+import { TrumpipsumComponent } from './trumpipsum/trumpipsum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
@@ -13,7 +14,6 @@ import { MatCardModule
         , MatOptionModule
         , MatInputModule
         , MatSelectModule
-
         } from '@angular/material';
 import { JdivisionComponent } from './jdivision/jdivision.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
@@ -29,6 +29,7 @@ import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
     , JdivisionComponent
     , TjsAdditionComponent
     , RwmRpslsComponent
+    , TrumpipsumComponent
   ],
   imports: [
     BrowserModule
