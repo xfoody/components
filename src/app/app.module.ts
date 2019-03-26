@@ -7,13 +7,17 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule 
         , MatButtonModule
-        , MatCheckboxModule } from '@angular/material';
+        , MatCheckboxModule
+        , MatFormFieldModule
+        , MatInputModule } from '@angular/material';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule
@@ -22,6 +26,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatFormFieldModule
+    , MatInputModule
     , FlexLayoutModule
   ],
   providers: [],
