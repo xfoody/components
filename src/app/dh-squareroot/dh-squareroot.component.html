@@ -1,0 +1,12 @@
+<mat-card>
+      <mat-card-title>
+          Dylan's Square Root Component
+      </mat-card-title>
+      <mat-card-content>
+          √ &nbsp; of &nbsp; 
+          <input type="number" [(ngModel)]='numberToSquare'>
+          <button (click)='squareNumber()'>=</button>
+          &nbsp;
+          {{ answer }}
+        </mat-card-content>
+</mat-card>
