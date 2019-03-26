@@ -20,6 +20,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DhSquarerootComponent } from './dh-squareroot/dh-squareroot.component';
 import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
+import { Slackntell6Component } from './slackntell6/slackntell6.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
     , TjsAdditionComponent
     , RwmRpslsComponent
     , TrumpipsumComponent
+    , Slackntell6Component
   ],
   imports: [
     BrowserModule
