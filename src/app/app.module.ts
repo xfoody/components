@@ -22,6 +22,7 @@ import { RwmRpslsComponent } from './rwm-rpsls/rwm-rpsls.component';
 import { FullnameComponent } from './fullname/fullname.component';
 import { DlnMultiplyComponent } from './dln-multiply/dln-multiply.component';
 import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.component';
+import { DcSquareComponent } from './dc-square/dc-square.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BoMultiplicationComponent} from './bo-multiplication/bo-multiplication.
     , DlnMultiplyComponent
     , TrumpipsumComponent
     , BoMultiplicationComponent
+    , DcSquareComponent
   ],
   imports: [
     BrowserModule
