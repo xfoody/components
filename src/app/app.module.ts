@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule
+  ,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
@@ -9,25 +10,28 @@ import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule
         , MatFormFieldModule
-        , MatInputModule } from '@angular/material';
+        , MatInputModule} from '@angular/material';
+import { JdivisionComponent } from './jdivision/jdivision.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaComponent,
-    TjsAdditionComponent
+      AppComponent
+    , PizzaComponent
+    , JdivisionComponent
+    , TjsAdditionComponent
   ],
   imports: [
     BrowserModule
     , FormsModule
+    , ReactiveFormsModule
     , BrowserAnimationsModule
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule 
     , MatFormFieldModule
-    , MatInputModule
     , FlexLayoutModule
   ],
   providers: [],
