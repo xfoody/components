@@ -23,4 +23,8 @@ export class PizzaService {
       , checked: false
     }));
   }
+
+  // public doMultiplication() {
+  //   const multiplication = {};  
+  // }
 }

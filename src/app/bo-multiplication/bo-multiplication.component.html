@@ -1,0 +1,31 @@
+
+<mat-card>
+    
+  
+      <mat-card-title>
+        Bo's multiplication content
+      </mat-card-title>
+  
+    <mat-card-content>
+  
+  
+        <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+            <p><input type="number" [(ngModel)] = 'numberOne'>
+              &nbsp;
+            <select [(ngModel)]='operator'>
+                <option>+</option>
+                <option>*</option>
+                <option>-</option>
+                <option>/</option>
+             </select> 
+             &nbsp;
+            <input type="number" [(ngModel)] = 'numberTwo'> <button (click)='docalculation()' style='background-color: grey;'>  = </button> &nbsp;
+            {{ result }}
+          </p>
+           
+        </div>
+  
+       
+    </mat-card-content>
+  </mat-card>
+  
