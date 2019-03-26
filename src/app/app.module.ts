@@ -9,11 +9,13 @@ import { MatCardModule
         , MatButtonModule
         , MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DcSquareComponent } from './dc-square/dc-square.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaComponent
+    PizzaComponent,
+    DcSquareComponent
   ],
   imports: [
     BrowserModule
