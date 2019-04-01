@@ -1,0 +1,14 @@
+<mat-card>
+
+  <mat-card-title>Sam's Modulo Component</mat-card-title>
+
+  <mat-card-content>
+      <input type="number" [(ngModel)]='numberOne'>
+      &nbsp; % &nbsp;
+      <input type="number" [(ngModel)]='numberTwo'>
+      &nbsp;
+      <button (click)='moduloNumbers()'>=</button>
+      {{ answer }}
+  </mat-card-content>
+
+</mat-card>

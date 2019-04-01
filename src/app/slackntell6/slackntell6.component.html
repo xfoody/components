@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>
+    Fuedti's Quick Maths
+  </mat-card-title>
+  <input type="number" [(ngModel)]='numberOne'>
+  &nbsp; - &nbsp;
+  <input type="number" [(ngModel)]='numberTwo'>
+  &nbsp;
+  <button (click)='subtraction()'>=</button>
+  &nbsp;
+  {{ answer }}
+</mat-card>

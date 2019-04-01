@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Jeanne's Division component</mat-card-title>
+  <mat-card-content>
+    <form>
+      <mat-form-field> 
+        <input [(ngModel)] = "dividend" matInput type="number" name="dividend" placeholder="Dividend"> 
+      </mat-form-field>     
+        <span> / </span>
+      <mat-form-field>
+      <input [(ngModel)] = "divider" matInput type="number" name="divider" placeholder="Divider (Non zero number)">
+      </mat-form-field>
+       <button mat-raised-button (click) = "divideNumbers()"> = </button> &nbsp;
+      <span *ngIf="show">{{quotient | number  }}</span> <mat-error>{{ errorMessage}}</mat-error>  
+
+      
+    </form>
+  </mat-card-content>
+</mat-card>
